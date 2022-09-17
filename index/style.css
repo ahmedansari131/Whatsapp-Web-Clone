@@ -1,0 +1,365 @@
+/* #00a884 - green */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #0a1014;
+    /* height: 96vh; */
+    overflow: hidden;
+}
+
+.big-container{
+    background-color: rgb(21, 37, 34);  
+    margin: 1.2em 1.2em;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* height: 95.5vh; */
+}
+
+.column-1{
+    /* width: 50%; */
+    height: 100vh;
+    background-color: #111b21;
+    border-right-width: thin;
+    border-right-style: solid;
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.header, .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    width: 100%;
+    background-color: #202c33;
+}
+
+.header .profile-pic{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.header .profile-pic img{
+    width: 18%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.options ul{
+    display: flex;
+    align-items: center;
+}
+
+.options ul li{
+    list-style: none;
+    padding: 0 .9em;
+}
+
+.options ul li a{
+    cursor: pointer;
+    color: #8696a0;
+    text-decoration: none;
+}
+
+.options ul li a svg:active{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 50px;
+}
+
+.search-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .4em;
+    padding: 0 .7em;
+}
+
+.search-sec .search-bar{
+    margin-right: 20px;
+    width: 100%;
+    border-radius: 8px;
+    /* border: 2px solid yellow; */
+    background-color: #202c33;
+    display: flex;
+    align-items: center;
+    padding: 0.2em 1em;
+    justify-content: center;
+    
+}
+
+.search-sec .search-bar svg{
+    /* color: #202c33; */
+    position: absolute;
+    left: 3%;
+    cursor: pointer;
+    color: #8696a0;
+}
+
+.search-sec input{
+    color: white;
+    background-color: #202c33;
+    outline: none;
+    padding: .4em .6em;
+    border: none;
+    width: 80%;
+    font-size: .9rem;
+}
+
+::placeholder{
+    color: #8696a0;
+}
+
+.search-sec .chat-filter svg{
+    color: #8696a0;
+}
+
+.search-sec .chat-filter svg:active{
+    background-color: #00a884;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Chats Section */
+.sm-container {
+    display: grid;
+    grid-template-columns: 16% 84%;
+    margin: 1.5em .5em 0 .5em;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    cursor: pointer;
+    /* border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-color: rgba(255, 255, 255, .1); */
+}
+
+section .arch-prof{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+section .arch-prof a svg{
+    color: #00a884;
+    cursor: pointer;
+}
+
+.sm-container .archived{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* border-bottom:  solid #d1d7db; */
+    padding-bottom: 1em;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    /* padding-top: .9em; */
+}
+
+.sm-container .num{
+    /* border: 1px solid white; */
+    color: #00a884;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+.sm-container .profile-img{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sm-container .arch-prof img{
+    width: 64%;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: .6em;
+}
+/* .sm-container .profile-img img{
+    width: 64%;
+    border-radius: 30px;
+    cursor: pointer;
+} */
+
+.sm-container .chat-name{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-items: center; */
+    color: white;
+    font-family: sans-serif;
+}
+
+.sm-container .bottom-border h4{
+    padding-bottom: .4em;
+    font-weight: lighter;
+}
+
+.sm-container .bottom-border .archived .span{
+    font-size: .9rem;
+    color: #8696a0;
+    display: flex;
+    align-items: center;
+}
+
+.sm-container .chat-name .span svg{
+    padding-right: .2em;
+    color: #53bdeb;
+}
+
+.sm-container .chat-time{
+    font-size: .8rem;
+    color: #8696a0;
+    font-family: sans-serif;
+    padding-bottom: 1.8em;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    /* margin-bottom: .6em; */
+}
+
+.border-container{
+    padding: 0.3em 0 1em 0;
+    /* border: 1px solid green; */
+}
+
+.bottom-border{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-color: rgba(255, 255, 255, .1);
+    padding-right: 20px;
+    /* border: 1px solid red; */
+}
+
+.mt-container{
+    margin-top: 1em;
+}
+
+/* Right Section */
+.column-2 .header .profile-active-pic{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-active-name {
+    margin-left: .9em;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.profile-active-name .profile-active-status{
+    font-size: .8rem;
+    color: #8696a0;
+    padding-top: .4em;
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 5em 1em 5em;
+}
+
+.chat-container svg{
+    color: #202c33;
+}
+
+.chat-box{
+    border-radius: 8px;
+    /* border: 2px solid yellow; */
+    background-color: #202c33;
+    padding: 0.5em .8em;
+    align-items: center;
+    display: flex;
+    margin-left: -15px;
+    max-width: 17%;
+}
+
+.chat-box p{
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+.chat-box .chat-time{
+    font-size: .7rem;
+    color: #8696a0;
+    font-family: sans-serif;
+    padding-top: .7em;
+    padding-left: 1.52em;
+}
+
+.chat-container-flex{
+    display: flex;
+    justify-content: left;
+}
+
+
+/* Footer section */
+.footer .emo-pin-msg{
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    padding: .7em 1em;
+    position: absolute;
+    bottom: 18px;
+}
+
+.emo-pin-msg {
+    color: #8696a0;
+    cursor: pointer;
+    /* margin: 1em; */
+}
+
+.emo-pin-msg svg{
+    margin-right: 1.1em;
+}
+
+.msg-input{
+    /* border: 1px solid red; */
+    padding: .3em;
+    background-color: #2a3942;
+    border-radius: 7px;
+    width: 885px;
+    /* margin-left: 120px; */
+}
+
+.msg-input input{
+    outline: none;
+    padding: .6em;
+    border-radius: 7px;
+    border: none;
+    margin: 0em .5em 0em .5em;
+    width: 98%;
+    /* height: 120%; */
+    background-color: #2a3942;
+    caret-color: white;
+    font-size: .9rem;
+    color: white;
+
+}
+
+.option-mic{
+    color: #8696a0;
+    cursor: pointer;
+}
+
+.column-2{
+    position: relative;
+}
